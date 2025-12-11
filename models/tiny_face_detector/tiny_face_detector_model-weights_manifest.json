@@ -1,1 +1,1 @@
-[{"weights": [{"name": "tiny_conv/weights", "shape": [3, 3, 3, 32], "dtype": "float32"}], "paths": ["tiny_face_detector_model-shard1"]}]
+[{"weights": [{"name": "tiny_conv/weights", "shape": [3, 3, 3, 32], "dtype": "float32"}], "paths": ["tiny_face_detector_model-shard1.bin"]}]
