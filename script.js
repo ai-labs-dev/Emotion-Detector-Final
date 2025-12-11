@@ -102,19 +102,14 @@ function resizeCanvas() {
 
 // Load models from local models folder — exact folder names required
 async function initModels() {
-  loader.textContent = 'Loading face models…';
-  try {
-    // load each model from its folder
+    loader.textContent = 'Loading face models…';
+
     await faceapi.nets.tinyFaceDetector.loadFromUri('./models/tiny_face_detector');
     await faceapi.nets.faceExpressionNet.loadFromUri('./models/face_expression');
+
     loader.style.display = 'none';
-    console.log('Face models loaded.');
-  } catch (e) {
-    loader.textContent = 'Error loading models. See console.';
-    console.error('initModels error', e);
-    throw e;
-  }
 }
+
 
 // TinyFace detector options (reuse)
 const tinyFaceOptions = new faceapi.TinyFaceDetectorOptions({
