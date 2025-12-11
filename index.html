@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweet Glance — Webcam Emotion Detector</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- face-api.js CDN -->
+  <script defer src="https://unpkg.com/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Sweet Glance</h1>
+      <p class="subtitle">A little app to catch your mood — send the link, make her smile ✨</p>
+    </header>
+
+    <section class="player">
+      <div class="video-wrap">
+        <video id="video" autoplay muted playsinline></video>
+        <canvas id="overlay"></canvas>
+        <div id="hearts" class="hearts" aria-hidden="true"></div>
+      </div>
+
+      <aside class="controls">
+        <div class="status">
+          <div id="loader" class="loader">Loading models…</div>
+          <div id="emotionLabel" class="emotion">—</div>
+        </div>
+
+        <div class="result-card">
+          <h2 id="cuteTitle">Hello, beautiful</h2>
+          <p id="cuteMessage">Allow the camera and let the magic begin ✨</p>
+        </div>
+
+        <button id="toggleBtn" class="btn">Start / Restart</button>
+
+        <footer class="credits">
+          <small>Made with ❤  — Feel free to customize the compliments.</small>
+        </footer>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
