@@ -1,1 +1,1 @@
-[{"weights": [{"name": "fc/weights", "shape": [256, 7], "dtype": "float32"}], "paths": ["face_expression_model-shard1"]}]
+[{"weights": [{"name": "fc/weights", "shape": [256, 7], "dtype": "float32"}], "paths": ["face_expression_model-shard1.bin"]}]
